@@ -1084,12 +1084,10 @@ function buildModalHTML(data) {
           <h2 class="modal-title">${title}</h2>
         </div>
         <div class="modal-details">
-          <div class="detail-row"><span class="detail-label">${isAr ? 'السنة' : 'Year'}</span><span class="detail-value">${data.year}</span></div>
           <div class="detail-row"><span class="detail-label">${isAr ? 'الموقع' : 'Location'}</span><span class="detail-value">${location}</span></div>
           <div class="detail-row"><span class="detail-label">${isAr ? 'المساحة' : 'Area'}</span><span class="detail-value">${area}</span></div>
           <div class="detail-row"><span class="detail-label">${isAr ? 'الأسلوب' : 'Style'}</span><span class="detail-value">${style}</span></div>
           <div class="detail-row"><span class="detail-label">${isAr ? 'البرامج' : 'Software'}</span><span class="detail-value" style="font-size:0.72rem">${data.software || '—'}</span></div>
-          <div class="detail-row"><span class="detail-label">${isAr ? 'الحالة' : 'Status'}</span><span class="detail-value" style="color:var(--gold)">${status}</span></div>
         </div>
       </div>
 
