@@ -76,6 +76,12 @@
 [data-theme="dark"] .filter-btn     { border-color: #7A5C48; color: var(--walnut); }
 [data-theme="dark"] .skill-item     { border-bottom-color: #7A5C48; }
 [data-theme="dark"] .about-stats    { border-top-color: #7A5C48; }
+[data-theme="dark"] .process        { background: #1E140E; }
+[data-theme="dark"] .process .display-md { color: #F4EDE4; }
+[data-theme="dark"] .step-dot       { background: #2C1F17; border-color: #7A5C48; }
+[data-theme="dark"] .step-title     { color: #F4EDE4; }
+[data-theme="dark"] .step-desc      { color: rgba(244,237,228,.75); }
+[data-theme="dark"] .process-timeline::before { background: rgba(122,92,72,.4); }
 
 /* ══════════════════════════════════════════════════
    ARABIC / RTL LANGUAGE SUPPORT
