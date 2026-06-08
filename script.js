@@ -1325,3 +1325,4 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 400 + i * 120);
   });
 });
+// Updated: Mon Jun  8 22:23:49 +03 2026
