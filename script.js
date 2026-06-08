@@ -615,17 +615,9 @@ const projectData = {
     renders: [
       'images/p7-render-1.jpg',
       'images/p7-render-2.jpg',
-      'images/p7-sheet.jpg',
     ],
 
-    moodboard: [
-      'images/p7-render-1.jpg',
-      'images/p7-render-2.jpg',
-      'images/p7-sheet.jpg',
-      'images/p7-render-1.jpg',
-    ],
-
-    floorPlan: 'images/p7-sheet.jpg',
+    floorPlan: null,
   },
 
   /* ─── PROJECT 08 — Apartment Redesign (Before/After) ─── */
