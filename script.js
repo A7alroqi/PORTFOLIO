@@ -1035,9 +1035,6 @@ function buildModalHTML(data) {
           <p class="video-label">${isAr ? 'انقر لتشغيل الفيديو' : 'Click to play video'}</p>
         </div>
       </div>
-      <p style="font-size:0.72rem;color:var(--taupe);margin-top:0.5rem;letter-spacing:0.04em">
-        ${isAr ? '📁 ضع ملف الفيديو في مجلد /videos/' : '📁 Place video file in /videos/ folder'}
-      </p>
     </div>` : '';
 
   // ── Before/After section
