@@ -748,18 +748,10 @@ const projectData = {
       'images/p9-render-1.jpg',
       'images/p9-render-2.jpg',
       'images/p9-render-3.jpg',
-      'images/p9-render-4.jpg',
       'images/p9-sheet.jpg',
     ],
 
-    moodboard: [
-      'images/p9-render-1.jpg',
-      'images/p9-render-2.jpg',
-      'images/p9-render-3.jpg',
-      'images/p9-render-4.jpg',
-    ],
-
-    floorPlan: 'images/p9-sheet.jpg',
+    floorPlan: null,
   },
 
 };
