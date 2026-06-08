@@ -226,7 +226,7 @@ const projectData = {
     status:   'Completed',
     statusAr: 'منجز',
 
-    heroImage: 'images/p1-sheet.jpg',
+    heroImage: 'images/p1-render-1.jpg',
 
     overview: `This living room project — titled "Munirah Project" — explores the harmony
     between modern design and everyday comfort. The brief was clear: a space that is
@@ -257,15 +257,13 @@ const projectData = {
     ],
 
     renders: [
-      'images/p1-sheet.jpg',
       'images/p1-render-1.jpg',
+      'images/p1-render-2.jpg',
     ],
 
     moodboard: [
-      'images/p1-sheet.jpg',
       'images/p1-render-1.jpg',
-      'images/hero.jpg',
-      'images/p1-sheet.jpg',
+      'images/p1-render-2.jpg',
     ],
 
     floorPlan: null,
