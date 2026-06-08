@@ -210,9 +210,9 @@ const translations = {
 
 const projectData = {
 
-  /* ─── PROJECT 01 — Living Room (Monirah Project) ─── */
+  /* ─── PROJECT 01 — Living Room (Munirah Project) ─── */
   'living-room': {
-    title:    'Monirah Living Room',
+    title:    'Munirah Living Room',
     titleAr:  'غرفة معيشة منيرة',
     category: 'Residential',
     categoryAr: 'سكني',
@@ -228,7 +228,7 @@ const projectData = {
 
     heroImage: 'images/p1-sheet.jpg',
 
-    overview: `This living room project — titled "Monirah Project" — explores the harmony
+    overview: `This living room project — titled "Munirah Project" — explores the harmony
     between modern design and everyday comfort. The brief was clear: a space that is
     contemporary in form yet warm and inviting in feel.`,
 
@@ -1025,10 +1025,11 @@ function buildModalHTML(data) {
     `<button class="gallery-dot ${i === 0 ? 'active' : ''}" data-index="${i}" aria-label="Slide ${i+1}"></button>`
   ).join('');
 
-  // ── Floor plans
+  // ── Floor plans (only shown if available)
   const floorPlanHTML = data.floorPlan
-    ? `<img src="${data.floorPlan}" alt="Floor plan — ${title}" style="width:100%;height:auto;display:block" />`
-    : `<div class="floor-plan-img"><span style="font-family:var(--font-display);color:var(--taupe)">${isAr ? 'المخطط غير متاح' : 'Floor plan not available'}</span></div>`;
+    ? `<div class="modal-section"><h3 class="modal-section-title">${isAr ? 'المخطط' : 'Floor Plan'}</h3>
+        <div class="floor-plan-wrap"><img src="${data.floorPlan}" alt="Floor plan — ${title}" style="width:100%;height:auto;display:block" /></div></div>`
+    : '';
 
   const upperFloorHTML = data.floorPlanUpper
     ? `<div class="modal-section"><h3 class="modal-section-title">${isAr ? 'مخطط الطابق العلوي' : 'Upper Floor Plan'}</h3>
@@ -1112,10 +1113,7 @@ function buildModalHTML(data) {
       ${materials  ? `<div class="modal-section"><h3 class="modal-section-title">${isAr ? 'لوحة المواد' : 'Material Palette'}</h3><div class="material-palette">${materials}</div></div>` : ''}
       ${moodItems  ? `<div class="modal-section"><h3 class="modal-section-title">${isAr ? 'لوحة الإلهام' : 'Mood Board'}</h3><div class="mood-grid">${moodItems}</div></div>` : ''}
 
-      <div class="modal-section">
-        <h3 class="modal-section-title">${isAr ? 'المخطط' : 'Floor Plan'}</h3>
-        <div class="floor-plan-wrap">${floorPlanHTML}</div>
-      </div>
+      ${floorPlanHTML}
 
       ${upperFloorHTML}
 
@@ -1303,9 +1301,23 @@ function initContactForm() {
     const submitSpan = submit.querySelector('span') || submit;
     submit.disabled = true;
     submitSpan.textContent = isAr ? 'جاري الإرسال…' : 'Sending…';
-    await new Promise(r => setTimeout(r, 900));
-    showFormMsg(form, isAr ? 'شكراً! ستتواصل معك منيرة قريباً.' : 'Thank you, Munirah will be in touch soon!', 'success');
-    form.reset();
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        showFormMsg(form, isAr ? 'شكراً! ستتواصل معك منيرة قريباً.' : 'Thank you! Munirah will be in touch soon.', 'success');
+        form.reset();
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      showFormMsg(form, isAr ? 'حدث خطأ. يرجى المحاولة مجدداً أو التواصل عبر البريد الإلكتروني.' : 'Something went wrong. Please try again or email directly.', 'error');
+    }
+
     submit.disabled = false;
     submitSpan.textContent = isAr ? 'إرسال الرسالة' : 'Send Message';
   });
