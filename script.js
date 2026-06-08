@@ -16,7 +16,7 @@ const translations = {
     'nav-services':  'Services',
     'nav-contact':   'Contact',
 
-    'hero-eyebrow':  'Interior Designer · Portfolio 2024',
+    'hero-eyebrow':  'Interior Designer',
     'hero-name1':    'Munirah',
     'hero-name2':    'Almahmoud',
     'hero-tagline':  'Crafting spaces that are modern, elegant & deeply personal',
@@ -113,7 +113,7 @@ const translations = {
     'nav-services':  'الخدمات',
     'nav-contact':   'تواصل معي',
 
-    'hero-eyebrow':  'مصممة داخلية · بورتفوليو 2024',
+    'hero-eyebrow':  'مصممة داخلية',
     'hero-name1':    'منيرة',
     'hero-name2':    'المحمود',
     'hero-tagline':  'أصنع فراغات عصرية وأنيقة تعكس شخصيتك',
