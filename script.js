@@ -316,16 +316,16 @@ const projectData = {
     ],
 
     renders: [
-      'images/p2-render-1.png',
+      'images/p2-render-1.jpg',
       'images/p2-render-2.jpg',
-      'images/p2-render-3.png',
+      'images/p2-render-3.jpg',
       'images/p2-hero.jpg',
     ],
 
     moodboard: [
-      'images/p2-render-1.png',
+      'images/p2-render-1.jpg',
       'images/p2-render-2.jpg',
-      'images/p2-render-3.png',
+      'images/p2-render-3.jpg',
       'images/p2-hero.jpg',
     ],
 
