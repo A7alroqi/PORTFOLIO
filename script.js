@@ -564,17 +564,7 @@ const projectData = {
 
     renders: [
       'images/p6-hero.jpg',
-      'images/p6-sheet.jpg',
     ],
-
-    moodboard: [
-      'images/p6-hero.jpg',
-      'images/p6-sheet.jpg',
-      'images/p6-hero.jpg',
-      'images/p6-sheet.jpg',
-    ],
-
-    floorPlan: 'images/p6-sheet.jpg',
   },
 
   /* ─── PROJECT 07 — Private Farm Al-Kharj ─── */
