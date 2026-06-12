@@ -101,7 +101,7 @@ const translations = {
     'form-msg-ph':           'Tell me about your project…',
     'form-submit':           'Send Message',
 
-    'footer-copy':      '© 2024 Munirah Bader Almahmoud. All rights reserved.',
+    'footer-copy':      'Every space tells a story. My role is to shape it.',
     'footer-about':     'About',
     'footer-work':      'Work',
     'footer-contact':   'Contact',
@@ -200,7 +200,7 @@ const translations = {
     'form-msg-ph':           'أخبرني عن مشروعك…',
     'form-submit':           'إرسال الرسالة',
 
-    'footer-copy':      '© 2024 منيرة بدر المحمود. جميع الحقوق محفوظة.',
+    'footer-copy':      'كل مساحة تحكي قصة. دوري هو أن أصنعها.',
     'footer-about':     'نبذة',
     'footer-work':      'الأعمال',
     'footer-contact':   'تواصل',
