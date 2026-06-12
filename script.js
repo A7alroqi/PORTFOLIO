@@ -693,10 +693,7 @@ const projectData = {
       'images/p8-after-2.jpg',
     ],
 
-    // Video support — place your .mp4 in /videos/p8-video.mp4
-    videoSrc: 'videos/p8-video.mp4',
-    videoLabel: 'Transformation Walkthrough',
-    videoLabelAr: 'جولة التحول',
+    videoSrc: null,
   },
 
   /* ─── PROJECT 09 — 60m² Apartment ─── */
