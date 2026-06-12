@@ -92,6 +92,7 @@
   direction: rtl;
   font-family: var(--font-arabic);
 }
+[lang="ar"] #about-heading br { display: none; }
 
 [lang="ar"] .nav-links,
 [lang="ar"] .filter-bar,
