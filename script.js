@@ -751,6 +751,9 @@ const projectData = {
     ],
 
     floorPlan: null,
+    videoSrc: 'videos/p8-video.mp4',
+    videoLabel: 'Project Walkthrough',
+    videoLabelAr: 'جولة المشروع',
   },
 
 };
