@@ -25,6 +25,8 @@ const translations = {
     'hero-scroll':   'Scroll',
 
     'about-num':     '01 — About',
+    'about-name1':   'Munirah Bader',
+    'about-name2':   'Almahmoud',
     'about-quote':   '"Creating spaces that are modern, elegant, and deeply comfortable — through calm colours, natural materials, and simple details."',
     'about-bio1':    'I am Munirah Almahmoud, an interior designer specialising in residential and commercial spaces. I strive to deliver design solutions that unite beauty and function — creating a comfortable and distinctive experience for every user.',
     'about-bio2':    'My approach centres on making the most of every space, offering practical solutions that are carefully tailored to meet the unique needs of each project.',
@@ -122,6 +124,8 @@ const translations = {
     'hero-scroll':   'تمرير',
 
     'about-num':     '01 — نبذة',
+    'about-name1':   'منيرة بدر',
+    'about-name2':   'المحمود',
     'about-quote':   '"خلق فراغات عصرية وأنيقة ومريحة — من خلال الألوان الهادئة والمواد الطبيعية والتفاصيل البسيطة."',
     'about-bio1':    'أنا منيرة المحمود، مصممة داخلية متخصصة في تصميم المساحات السكنية والتجارية، أسعى إلى تقديم حلول تصميمية تجمع بين الجمال والوظيفة وتحقق تجربة مريحة ومميزة للمستخدم.',
     'about-bio2':    'مع الاستفادة المثلى من المساحات وتقديم حلول تصميمية عملية تلبي احتياجات المشروع.',
